@@ -15,6 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
     { name: 'Nosotros', href: '#nosotros' },
     { name: 'Misión', href: '#mision-vision' },
     { name: 'Proyectos', href: '#proyectos' },
+    { name: 'Ubicación', href: '#ubicacion' },
   ];
 
   return (

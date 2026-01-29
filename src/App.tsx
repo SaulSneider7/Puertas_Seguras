@@ -5,7 +5,9 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import MissionVision from './components/MissionVision';
+import Brands from './components/Brands';
 import Gallery from './components/Gallery';
+import Location from './components/Location';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 
@@ -40,9 +42,17 @@ const App: React.FC = () => {
         <section id="mision-vision" className="py-24 bg-blue-900 overflow-hidden">
           <MissionVision />
         </section>
+
+        <section id="sistemas" className="py-24 bg-white">
+          <Brands />
+        </section>
         
-        <section id="proyectos" className="py-24 bg-white">
+        <section id="proyectos" className="py-24 bg-slate-50">
           <Gallery />
+        </section>
+
+        <section id="ubicacion" className="py-24 bg-white">
+          <Location />
         </section>
       </main>
       

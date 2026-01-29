@@ -3,6 +3,17 @@ import type { Service, Project } from './types';
 
 export const PHONE_NUMBER = "+51 907 122 035";
 export const WHATSAPP_LINK = `https://wa.me/51907122035`;
+export const EMAIL = "puertasseguras13@gmail.com";
+export const ADDRESS = "Mariategui mz c1 lote 9 comite 26 santa rosa, Callao 07026, Perú";
+export const BUSINESS_HOURS = [
+  { day: 'Lunes', hours: '8:30am a 5:30pm' },
+  { day: 'Martes', hours: '8:30am a 5:30pm' },
+  { day: 'Miércoles', hours: '8:30am a 5:30pm' },
+  { day: 'Jueves', hours: '8:30am a 5:30pm' },
+  { day: 'Viernes', hours: '8:30am a 5:30pm' },
+  { day: 'Sábado', hours: '8:30am a 5:30pm' },
+  { day: 'Domingo', hours: 'Cerrado', isClosed: true },
+];
 
 export const COLORS = {
   primary: 'blue-900',
@@ -10,103 +21,97 @@ export const COLORS = {
   accent: 'blue-700',
 };
 
+export const BRANDS = [
+  { name: 'SmartLift', logo: './logo_SmartLift.webp', type: 'horizontal' },
+  { name: 'Nice', logo: 'logo_nice.webp', type: 'square' },
+  { name: 'Centurion', logo: './logo_centurion.webp', type: 'horizontal' },
+  { name: 'Hiland', logo: './logo_hiland.webp', type: 'square' },
+  { name: 'KTH', logo: './logo_KTH.webp', type: 'horizontal' },
+  { name: 'Record', logo: './logo_record.webp', type: 'square' },
+  { name: 'V2', logo: './logo_v2.webp', type: 'horizontal' },
+  { name: 'VDS', logo: './logo_VDS.webp', type: 'square' },
+  { name: 'ZK', logo: './logo_ZK.webp', type: 'horizontal' },
+  { name: 'Almatic', logo: './logo_almatic.webp', type: 'square' },
+];
+
 export const SERVICES: Service[] = [
   // Tipos de Puertas
-  { 
-    id: '1', 
-    category: 'tipo', 
-    title: 'Puertas Seccionales', 
-    description: 'Diseño vanguardista que optimiza el espacio mediante apertura vertical. Fabricadas con paneles de acero galvanizado y aislamiento térmico-acústico, ideales para garajes residenciales y almacenes modernos.', 
-    icon: 'fa-solid fa-layer-group' 
+  {
+    id: '1',
+    category: 'tipo',
+    title: 'Puerta seccional',
+    description: 'Sistema de apertura vertical que optimiza el espacio. Fabricadas con paneles de alta densidad y acabado estético premium para residencias y almacenes.',
+    icon: 'fa-solid fa-layer-group'
   },
-  { 
-    id: '2', 
-    category: 'tipo', 
-    title: 'Puertas Corredizas', 
-    description: 'Solución robusta para ingresos vehiculares amplios. Nuestro sistema de rieles de alta resistencia garantiza un deslizamiento suave y seguro, soportando estructuras de gran peso con total estabilidad.', 
-    icon: 'fa-solid fa-arrows-left-right' 
+  {
+    id: '2',
+    category: 'tipo',
+    title: 'Puerta corrediza',
+    description: 'Solución ideal para ingresos vehiculares de gran ancho. Deslizamiento suave sobre rieles reforzados con sistemas anti-descarrilamiento de alta seguridad.',
+    icon: 'fa-solid fa-arrows-left-right'
   },
-  { 
-    id: '3', 
-    category: 'tipo', 
-    title: 'Puertas Batientes', 
-    description: 'El equilibrio perfecto entre elegancia clásica y tecnología. Sistemas de una o dos hojas con pistones hidráulicos o electromecánicos de alto rendimiento para una operación silenciosa y duradera.', 
-    icon: 'fa-solid fa-door-open' 
+  {
+    id: '3',
+    category: 'tipo',
+    title: 'Puerta peatonal residencial',
+    description: 'Accesos peatonales con cerraduras eléctricas integradas y acabados que combinan con su fachada. Seguridad y elegancia para el ingreso principal de su hogar.',
+    icon: 'fa-solid fa-door-closed'
   },
-  { 
-    id: '4', 
-    category: 'tipo', 
-    title: 'Puertas Enrollables', 
-    description: 'Máxima seguridad para locales comerciales. Fabricadas en acero de alto carbono con sistema de microperforado o ciego, permitiendo protección total sin sacrificar la estética de su fachada.', 
-    icon: 'fa-solid fa-scroll' 
+  {
+    id: '4',
+    category: 'tipo',
+    title: 'Puerta batiente',
+    description: 'Apertura clásica de una o dos hojas. Automatizadas con brazos hidráulicos o electromecánicos que garantizan un cierre hermético y seguro.',
+    icon: 'fa-solid fa-door-open'
   },
-  { 
-    id: '5', 
-    category: 'tipo', 
-    title: 'Puertas Residenciales', 
-    description: 'Seguridad premium para su hogar. Ofrecemos acabados personalizados en madera, metal y polímeros de alta densidad que incrementan la plusvalía de su propiedad y la protección de su familia.', 
-    icon: 'fa-solid fa-house-chimney' 
+  {
+    id: '5',
+    category: 'tipo',
+    title: 'Puerta enrollable',
+    description: 'Máxima protección para comercios e industrias. Fabricadas en acero galvanizado con sistemas de motor central o lateral para uso intensivo.',
+    icon: 'fa-solid fa-scroll'
   },
-  { 
-    id: '6', 
-    category: 'tipo', 
-    title: 'Puertas Comerciales', 
-    description: 'Diseñadas para el alto tráfico. Implementamos accesos de respuesta rápida con sensores de presencia y sistemas anti-aplastamiento, optimizando el flujo de clientes en su negocio.', 
-    icon: 'fa-solid fa-shop' 
-  },
-  { 
-    id: '7', 
-    category: 'tipo', 
-    title: 'Puertas Industriales', 
-    description: 'Resistencia extrema para uso intensivo. Estructuras reforzadas preparadas para naves logísticas, resistentes a impactos y condiciones climáticas adversas, garantizando la operatividad 24/7.', 
-    icon: 'fa-solid fa-industry' 
-  },
-  
+
   // Servicios Técnicos
-  { 
-    id: '8', 
-    category: 'tecnico', 
-    title: 'Instalación Profesional', 
-    description: 'Ejecución técnica bajo normas internacionales de ingeniería. Utilizamos equipos de nivelación láser y fijaciones de alta resistencia para asegurar un montaje perfecto desde el primer día.', 
-    icon: 'fa-solid fa-trowel-bricks' 
+  {
+    id: '6',
+    category: 'tecnico',
+    title: 'Servicio correctivo y preventivo',
+    description: 'Programas de mantenimiento para evitar fallas y reparaciones de emergencia para restaurar la operatividad de sus equipos en tiempo récord.',
+    icon: 'fa-solid fa-screwdriver-wrench'
   },
-  { 
-    id: '9', 
-    category: 'tecnico', 
-    title: 'Mantenimiento Preventivo', 
-    description: 'Programa de inspección integral que incluye lubricación técnica, calibración de sensores y revisión de fatiga de materiales para evitar fallas críticas y costosas reparaciones a futuro.', 
-    icon: 'fa-solid fa-shield-halved' 
+  {
+    id: '7',
+    category: 'tecnico',
+    title: 'Instalaciones, reparaciones y fabricación',
+    description: 'Servicio integral que abarca desde el diseño y fabricación de la estructura metálica hasta la instalación técnica y reparación de componentes.',
+    icon: 'fa-solid fa-trowel-bricks'
   },
-  { 
-    id: '10', 
-    category: 'tecnico', 
-    title: 'Mantenimiento Correctivo', 
-    description: 'Servicio de emergencia para reparación de motores, cambios de resortes, cables y electrónica. Contamos con técnicos de respuesta rápida para restablecer su seguridad en tiempo récord.', 
-    icon: 'fa-solid fa-screwdriver-wrench' 
+
+  // Automatización (se mantienen para complementar el catálogo)
+  {
+    id: '8',
+    category: 'automatizacion',
+    title: 'Venta de Motores',
+    description: 'Distribución de motores de marcas líderes con tecnología MyQ para control desde el celular.',
+    icon: 'fa-solid fa-microchip'
   },
-  
-  // Automatización
-  { 
-    id: '11', 
-    category: 'automatizacion', 
-    title: 'Venta de Motores', 
-    description: 'Distribución oficial de marcas líderes (LiftMaster, BFT, CAME). Motores inteligentes con tecnología Wi-Fi MyQ que permiten el control total de sus puertas desde su smartphone desde cualquier lugar.', 
-    icon: 'fa-solid fa-microchip' 
-  },
-  { 
-    id: '12', 
-    category: 'automatizacion', 
-    title: 'Accesorios y Repuestos', 
-    description: 'Stock permanente de controles remotos, sensores infrarrojos, cremalleras de acero y tarjetas electrónicas. Repuestos originales que garantizan la compatibilidad y vida útil de sus equipos.', 
-    icon: 'fa-solid fa-gears' 
+  {
+    id: '9',
+    category: 'automatizacion',
+    title: 'Sistemas de Seguridad',
+    description: 'Instalación de sensores infrarrojos, cercos eléctricos y cámaras integradas a sus accesos.',
+    icon: 'fa-solid fa-shield-halved'
   },
 ];
 
 export const PROJECTS: Project[] = [
-  { id: 1, title: 'Residencia Moderna', category: 'Residencial', imageUrl: './puerta_1.webp' },
-  { id: 2, title: 'Almacén Logístico', category: 'Industrial', imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, title: 'Centro Comercial', category: 'Comercial', imageUrl: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, title: 'Garaje Inteligente', category: 'Residencial', imageUrl: './puerta_2.webp' },
-  { id: 5, title: 'Nave Industrial', category: 'Industrial', imageUrl: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&q=80&w=800' },
-  { id: 6, title: 'Tienda Retail', category: 'Comercial', imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800' },
+  { id: 1, title: 'Residencia Moderna', category: 'Puerta Seccional', imageUrl: './puerta_seccional.webp' },
+  { id: 2, title: 'Almacén Logístico', category: 'Puerta Enrrollable', imageUrl: './puerta_enrrollable.webp' },
+  { id: 3, title: 'Industria', category: 'Puerta Corrediza', imageUrl: './puerta_corrediza.webp' },
+  { id: 4, title: 'Garaje Inteligente', category: 'Puerta Batiente', imageUrl: './puerta_batiente.webp' },
+  { id: 5, title: 'Puerta Casa', category: 'Puerta Principal de casa', imageUrl: './puerta_casa_1.webp' },
+  { id: 6, title: 'Puerta Casa', category: 'Puerta Principal de casa', imageUrl: './puerta_casa_2.webp' },
+  { id: 7, title: 'Puerta Casa', category: 'Puerta Principal de casa', imageUrl: './puerta_casa_3.webp' },
+  { id: 8, title: 'Puerta Casa', category: 'Puerta Principal de casa', imageUrl: './puerta_casa_4.webp' },
 ];
