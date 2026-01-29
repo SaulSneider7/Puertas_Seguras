@@ -24,9 +24,14 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="bg-blue-900 p-2.5 rounded-xl shadow-lg group-hover:bg-blue-800 transition-colors">
-              <i className="fa-solid fa-shield-halved text-white text-xl"></i>
-            </div>
+            <div className="bg-white p-2 rounded-xl shadow-lg flex items-center justify-center">
+  <img
+    src="./logo_puertasseguras.png"
+    alt="Puertas Seguras JLC"
+    className="h-10 w-auto object-contain"
+  />
+</div>
+
             <div className="flex flex-col -space-y-1">
               <span className={`text-xl font-black tracking-tight ${
                 scrolled ? 'text-blue-900' : 'text-white'

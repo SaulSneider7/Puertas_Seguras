@@ -8,14 +8,24 @@ const Footer: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 via-blue-500 to-orange-500"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center text-center mb-20">
+  <div className="bg-white p-4 rounded-3xl shadow-2xl mb-6">
+    <img
+      src="./logo_puertasseguras.png"
+      alt="Puertas Seguras JLC"
+      className="h-16 w-auto object-contain"
+    />
+  </div>
+  <h2 className="text-white text-3xl font-black tracking-tight">
+    Puertas Seguras JLC
+  </h2>
+  <p className="text-slate-400 mt-2 text-sm uppercase tracking-widest">
+    Seguridad · Automatización · Confianza
+  </p>
+</div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center space-x-3 text-white mb-8">
-              <div className="bg-orange-500 p-2 rounded-xl shadow-lg shadow-orange-500/20">
-                <i className="fa-solid fa-user-shield text-xl"></i>
-              </div>
-              <span className="text-2xl font-black tracking-tighter">Puertas Seguras JLC</span>
-            </div>
             <p className="mb-8 text-lg leading-relaxed font-light">
               Líderes en ingeniería de accesos y soluciones de automatización inteligente. 
               Calidad premium y seguridad certificada en cada proyecto ejecutado.
