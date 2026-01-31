@@ -37,7 +37,7 @@
 
                     <div class="flex flex-col -space-y-1">
                         <span id="nav-title" class="text-xl font-black tracking-tight text-white transition-colors">
-                            Especializaste en
+                            Especialistas en
                         </span>
                         <span id="nav-subtitle"
                             class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-200 transition-colors">
@@ -120,8 +120,7 @@
     <!-- HERO -->
     <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="./img/hero.jpg"
-                class="w-full h-full object-cover" alt="Hero">
+            <img src="./img/hero.jpg" class="w-full h-full object-cover" alt="Hero">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-900/85 to-blue-950/40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 text-white pt-28">
@@ -149,6 +148,7 @@
 
     <!-- SERVICIOS -->
     <section class="py-24 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="servicios">
+
         <!-- HEADER -->
         <div class="text-center mb-16">
             <h2 class="text-orange-500 text-sm font-black tracking-[0.3em] uppercase mb-4">
@@ -158,26 +158,67 @@
                 Nuestras Soluciones Integrales
             </h3>
             <p class="mt-4 text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                Ofrecemos ingeniería aplicada a la seguridad de sus ingresos, con la más alta tecnología en motores y
-                estructuras.
+                Soluciones profesionales en fabricación, instalación y mantenimiento de accesos industriales y
+                comerciales.
             </p>
         </div>
 
-        <!-- TABS -->
-        <div class="flex flex-wrap justify-center gap-3 mb-16" id="service-tabs">
-            <button data-tab="tipo" class="tab-btn px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-sm transition-all
-           bg-blue-900 text-white shadow-2xl shadow-blue-900/40 -translate-y-0.5">Tipos de Puertas</button>
-            <button data-tab="tecnico" class="tab-btn px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-sm transition-all
-           bg-white border border-slate-200 text-slate-500
-           hover:border-blue-900">Servicios Técnicos</button>
-            <button data-tab="automatizacion" class="tab-btn px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-sm transition-all
-           bg-white border border-slate-200 text-slate-500
-           hover:border-blue-900">Automatización</button>
-        </div>
+        <!-- SERVICIOS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        <!-- CARDS -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid"></div>
+            <!-- Puerta Seccional -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">Puerta Seccional</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Ideal para espacios industriales y comerciales, optimiza el área y brinda alta seguridad.
+                </p>
+            </div>
+
+            <!-- Puerta Enrollable -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">Puerta Enrollable</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Solución compacta y resistente para locales comerciales y almacenes.
+                </p>
+            </div>
+
+            <!-- Puerta Batiente -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">Puerta Batiente</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Accesos funcionales para uso residencial, comercial o industrial.
+                </p>
+            </div>
+
+            <!-- Puerta Corrediza -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">Puerta Corrediza</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Diseñadas para grandes accesos, combinan robustez y eficiencia operativa.
+                </p>
+            </div>
+
+            <!-- Mantenimiento -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">
+                    Mantenimiento Correctivo y Preventivo
+                </h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Diagnóstico, reparación y mantenimiento para garantizar la continuidad operativa.
+                </p>
+            </div>
+
+            <!-- Automatización -->
+            <div class="p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h4 class="text-xl font-black text-blue-900 mb-3">Accesos Automáticos</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Automatización de accesos con sistemas confiables y seguros.
+                </p>
+            </div>
+
+        </div>
     </section>
+
 
 
     <!-- NOSOTROS -->
@@ -188,8 +229,8 @@
                 <!-- Imagen -->
                 <div class="lg:w-1/2 relative">
                     <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white">
-                        <img src="./img/nosotros2.webp"
-                            alt="Equipo técnico Puertas Seguras JLC" class="w-full h-full object-cover min-h-[520px]" />
+                        <img src="./img/nosotros2.webp" alt="Equipo técnico Puertas Seguras JLC"
+                            class="w-full h-full object-cover min-h-[520px]" />
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
                     </div>
 
@@ -580,26 +621,25 @@
                 <!-- LOGICA DE ENVIO -->
                 <?php if (isset($_GET['estado'])): ?>
 
-                    <?php if ($_GET['estado'] === 'ok'): ?>
-                        <div class="mb-6 bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-2xl font-bold">
-                            Tu mensaje fue enviado correctamente.  
-                            Nos comunicaremos contigo a la brevedad.
-                        </div>
-                    <?php endif; ?>
+                <?php if ($_GET['estado'] === 'ok'): ?>
+                <div class="mb-6 bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-2xl font-bold">
+                    Tu mensaje fue enviado correctamente.
+                    Nos comunicaremos contigo a la brevedad.
+                </div>
+                <?php endif; ?>
 
-                    <?php if ($_GET['estado'] === 'error'): ?>
-                        <div class="mb-6 bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-2xl font-bold">
-                             Ocurrió un problema al enviar tu mensaje.  
-                            Por favor contáctanos por WhatsApp o por nuestros canales habituales.
-                        </div>
-                    <?php endif; ?>
+                <?php if ($_GET['estado'] === 'error'): ?>
+                <div class="mb-6 bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-2xl font-bold">
+                    Ocurrió un problema al enviar tu mensaje.
+                    Por favor contáctanos por WhatsApp o por nuestros canales habituales.
+                </div>
+                <?php endif; ?>
 
                 <?php endif; ?>
 
 
                 <!-- FORM -->
-                <form action="./enviar.php" method="POST"
-                    class="bg-slate-50 p-10 rounded-3xl shadow-xl space-y-6">
+                <form action="./enviar.php" method="POST" class="bg-slate-50 p-10 rounded-3xl shadow-xl space-y-6">
 
                     <input type="text" name="nombre" placeholder="Nombre completo" required
                         class="w-full px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none">
